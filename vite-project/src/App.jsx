@@ -68,7 +68,7 @@ function App() {
         </div>
 
         <div style={{width: '80%', marginBottom: '40px'}}>
-          <p style={{color: 'black', fontSize: '1.2rem', marginBottom: '15px'}}>Activity 2: Play Oral Sound Games That can be Read in a Array of languages From The Book I Gave out</p>
+          <p style={{color: 'black', fontSize: '1.2rem', marginBottom: '15px'}}>Activity 2: Play Oral Sound Games That can be Played in a Array of languages From The Book I Gave out</p>
           <p style={{color: 'black', fontSize: '1.2rem'}}>Engage in "I Spy" using the beginning sounds: "I spy something starting with /m/." Clap out syllables in family members' names. Play rhyming games: "What rhymes with cat?" These activities develop phonemic awareness—the ability to hear and manipulate individual sounds in words. "The largest units of sound within words are syllables" (Tompkins et al., 2021, p. 108).  If students can blend phonemes, then they can recognize the phonics portion of the lesson. Breaking words into syllables helps children understand word structure, which directly supports spelling development.</p>
         </div>
 
