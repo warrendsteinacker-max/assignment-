@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          # Path to your lock file inside the subfolder
+          # Looks for the lock file inside your subfolder
           cache-dependency-path: './vite-project/package-lock.json'
 
       - name: Install dependencies
@@ -36,7 +36,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Points to the dist folder inside the subfolder
+          # Points to the compiled folder inside the subfolder
           path: ./vite-project/dist
 
   deploy:
