@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <img src='Gemini_Generated_Image_1.png' style={{width: '100px', height: '100px'}}/>
+    <img src='Gemini_Generated_Image_1.png' style={{borderRadius: '10px', width: '500px', height: '500px'}}/>
     <p>hello</p>
     <p>1</p>
     </>
