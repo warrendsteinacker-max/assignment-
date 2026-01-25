@@ -6,10 +6,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <img src='/Gemini_Generated_Image_1' style={{width: '100px', height: '100px'}}/>
     <p>hello</p>
     <p>1</p>
     </>
