@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Router>
-        <nav>
+        <nav style={{position: 'sticky', top: 0, display: 'flex', gap: '20px', justifyContent: 'center', background: 'linear-gradient(to right, orange, pink)', padding: '10px'}}>
           <Link to="/">Home</Link>
           <Link to="/mod1">Module 1</Link>
           <Link to="/mod2">Module 2</Link>
