@@ -7,13 +7,19 @@ import Mod1 from './comps/Mod1'
 import Mod2 from './comps/Mod2'
 import Mod3 from './comps/Mod3'
 import Home from './comps/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
       <Router>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/mod1">Module 1</Link>
+          <Link to="/mod2">Module 2</Link>
+          <Link to="/mod3">Module 3</Link>
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mod1" element={<Mod1 />} />
