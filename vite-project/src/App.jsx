@@ -16,7 +16,7 @@ function App() {
       <Router>
         <p style={{color: 'black'}}>Use this to navigate between modules/pages</p>
         <nav style={{borderRadius: '10px', position: 'sticky', top: 0, display: 'flex', gap: '20px', justifyContent: 'center', background: 'linear-gradient(to right, orange, pink)', padding: '10px', alignItems: 'center'}}>
-          <div style={{alignItems: 'center'}}><img src="/src/assets/logo.png" alt="Logo" style={{width: '50px', height: '50px'}}/><p>Hello, my name is Warren. Welcome</p></div>
+          <div style={{alignItems: 'center'}}><img src="/src/assets/logo.png" alt="Logo" style={{width: '50px', height: '50px'}}/><p>Hello, my name is Warren. Welcome to my Elementary Literacy Skills Website!</p></div>
           <Link to="/">Home</Link>
           <Link to="/mod1">Module 1</Link>
           <Link to="/mod2">Module 2</Link>
