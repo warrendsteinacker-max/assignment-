@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Router>
-        <nav style={{position: 'sticky', top: 0, display: 'flex', gap: '20px', justifyContent: 'center', background: 'linear-gradient(to right, orange, pink)', padding: '10px'}}>
+        <nav style={{borderRadius: '10px', position: 'sticky', top: 0, display: 'flex', gap: '20px', justifyContent: 'center', background: 'linear-gradient(to right, orange, pink)', padding: '10px'}}>
           <img src="/src/assets/logo.png" alt="Logo" style={{width: '50px', height: '50px'}} />
           <Link to="/">Home</Link>
           <Link to="/mod1">Module 1</Link>
