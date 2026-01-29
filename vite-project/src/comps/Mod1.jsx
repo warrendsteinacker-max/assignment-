@@ -7,9 +7,8 @@ const Mod1 = () => {
   
   {/* This displays the PDF preview */}
   <iframe 
-    src="/literacy-flyer.pdf" 
-    width="100%" 
-    height="500px" 
+    style={{borderRadius: '15px', width: '100%', height: '500px'}}
+    src="/literacy-flyer.pdf"  
     title="Literacy Flyer Preview"
   ></iframe>
 
