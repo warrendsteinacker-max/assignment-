@@ -11,7 +11,9 @@ export default function Mod1() {
       <h3 style={{ fontFamily: 'sans-serif', color: 'black' }}>
         Module 1 Part 1 Assignment
       </h3>
-      
+      <div style={{border: '2px solid black', borderRadius: '10px', padding: '10px', marginBottom: '15px'}}>
+        <p style={{ color: 'black', margin: 0 }}>This assignment focuses on the creation of a professional Literacy Instructional Guide website that bridges research-based theory with practical classroom application for Grades K–3. In Part 1a, there is a comprehensive instructional checklist featuring 3–5 strategies for each of the five core literacy components—phonemic awareness, phonics, fluency, vocabulary, and comprehension—ensuring each is grade-appropriate and properly cited. Part 1b applies that checklist to a specific student profiles (such as Sofia, Malik, Aaliyah, or Jackson) to analyze their unique linguistic, cultural, and cognitive needs, culminating in a reflective essay that identifies strategy gaps and revisions. The final product is a visually organized, teacher-friendly piece of work in this website designed to demonstrate my ability to provide targeted, inclusive literacy support during a professional teaching interview and in class.</p>
+      </div>
       <p style={{ fontSize: '14px', color: 'black', marginBottom: '15px' }}>
         Preview of Module 1 Part 1 Assignment 
       </p>
@@ -26,7 +28,7 @@ export default function Mod1() {
           boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
         }}
         src={pdfPath}  
-        title="Literacy Flyer Preview"
+        title="1"
       ></iframe>
 
       {/* Download Section */}
