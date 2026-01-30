@@ -7,36 +7,54 @@ import Mod1 from './comps/Mod1'
 import Mod2 from './comps/Mod2'
 import Mod3 from './comps/Mod3'
 import Home from './comps/Home'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
-  return (
-    <>
-      <Router>
-        <p style={{color: 'black'}}>Use this to navigate between modules/pages</p>
-        <nav style={{borderRadius: '10px', position: 'sticky', top: 0, display: 'flex', gap: '20px', justifyContent: 'center', background: 'linear-gradient(to right, orange, pink)', padding: '10px', alignItems: 'center'}}>
-          <div style={{alignItems: 'center'}}><img src="/src/assets/logo.png" alt="Logo" style={{width: '50px', height: '50px'}}/><p>Hello, my name is Warren. Welcome to my Elementary Literacy Skills Website!</p></div>
-          <Link to="/">Home</Link>
-          <Link to="/mod1">Module 1</Link>
-          <Link to="/mod2">Module 2</Link>
-          <Link to="/mod3">Module 3</Link>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/mod1" element={<Mod1 />} />
-          <Route path="/mod2" element={<Mod2 />} />
-          <Route path="/mod3" element={<Mod3 />} />
-        </Routes>
-      </Router>
-    </>
-  )
+return (
+  <>
+    {/* The basename tells React Router the app lives in the /assignment-/ subfolder */}
+    <Router basename="/assignment-"> 
+      <p style={{color: 'black', fontWeight: 'bold'}}>Use this to navigate between pages</p>
+      <nav style={{
+        borderRadius: '10px', 
+        position: 'sticky', 
+        top: 0, 
+        zIndex: 1000, // Keeps nav above content
+        display: 'flex', 
+        gap: '20px', 
+        justifyContent: 'center', 
+        background: 'linear-gradient(to right, orange, pink)', 
+        padding: '10px', 
+        alignItems: 'center'
+      }}>
+        <div style={{display: 'flex', alignItems: 'center', gap: '10px'}}>
+          {/* Move logo.png to public folder and use absolute path like this */}
+          <img src="/assignment-/logo.png" alt="Logo" style={{width: '50px', height: '50px'}}/>
+          <p style={{margin: 0, fontSize: '14px'}}>Hello, my name is Warren. Welcome to my Elementary Literacy Skills Website!</p>
+        </div>
+        <Link to="/">Home</Link>
+        <Link to="/mod1">Module 1</Link>
+        <Link to="/mod2">Module 2</Link>
+        <Link to="/mod3">Module 3</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/mod1" element={<Mod1 />} />
+        <Route path="/mod2" element={<Mod2 />} />
+        <Route path="/mod3" element={<Mod3 />} />
+      </Routes>
+    </Router>
+  </>
+);
+
 }
 
 export default App
 
 
-
+///////basename='/assignment-'
   // return (
   //   <>
   //     <div style={{
