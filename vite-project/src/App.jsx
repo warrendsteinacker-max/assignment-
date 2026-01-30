@@ -2,19 +2,27 @@
 // import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 //will use this fir creating actual website
 
-import './App.css'
-import Mod1 from './comps/Mod1'
-import Mod2 from './comps/Mod2'
-import Mod3 from './comps/Mod3'
-import Home from './comps/Home'
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import React from 'react';
+import './App.css';
+import Mod1 from './comps/Mod1';
+import Mod2 from './comps/Mod2';
+import Mod3 from './comps/Mod3';
+import Home from './comps/Home';
+// Import your logo at the top so Vite handles the path correctly
+import logo from './assets/logo.png'; 
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
-
   return (
     <>
-      <Router> {/* Removed basename here */}
-        <p style={{color: 'black', fontWeight: 'bold'}}>Use this to navigate between pages</p>
+      {/* We use HashRouter without a basename for maximum compatibility 
+        with private networks (Tailscale) and GitHub Pages.
+      */}
+      <Router> 
+        <p style={{ color: 'black', fontWeight: 'bold', textAlign: 'center' }}>
+          Use this to navigate between pages
+        </p>
+        
         <nav style={{
           borderRadius: '10px', 
           position: 'sticky', 
@@ -27,30 +35,39 @@ function App() {
           padding: '10px', 
           alignItems: 'center'
         }}>
-          <Link to="/">Home</Link>
-          <Link to="/mod1">Module 1</Link>
-          <Link to="/mod2">Module 2</Link>
-          <Link to="/mod3">Module 3</Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            {/* Using the imported logo variable ensures the image shows up */}
+            <img src={logo} alt="Logo" style={{ width: '50px', height: '50px' }} />
+            <p style={{ margin: 0, fontSize: '14px', color: 'black' }}>
+              Welcome to my Elementary Literacy Skills Website!
+            </p>
+          </div>
+          
+          <Link to="/" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Home</Link>
+          <Link to="/mod1" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 1</Link>
+          <Link to="/mod2" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 2</Link>
+          <Link to="/mod3" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 3</Link>
         </nav>
 
-        <Routes>
-          {/* Use 'index' for the primary route */}
-          <Route index element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/mod1" element={<Mod1 />} />
-          <Route path="/mod2" element={<Mod2 />} />
-          <Route path="/mod3" element={<Mod3 />} />
-          {/* This ensures that if the URL is weird, it defaults to Home */}
-          <Route path="*" element={<Home />} />
-        </Routes>
+        <div style={{ padding: '20px' }}>
+          <Routes>
+            {/* 'index' ensures Home shows up as soon as the site loads */}
+            <Route index element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/mod1" element={<Mod1 />} />
+            <Route path="/mod2" element={<Mod2 />} />
+            <Route path="/mod3" element={<Mod3 />} />
+            
+            {/* 'path="*"' is your safety net; it catches broken links and redirects to Home */}
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </div>
       </Router>
     </>
   );
 }
 
-
-
-export default App
+export default App;
 
 
 ///////basename='/assignment-'

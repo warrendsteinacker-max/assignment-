@@ -3,8 +3,9 @@ import React from 'react';
 export default function Mod1() {
   // Use the repo name for the base path for GitHub Pages
   // Since the file is in 'public', use the absolute path including the repo name
-  const repoName = "assignment-";
-  const pdfPath = `/${repoName}/project-1-2-1.pdf`; 
+//   const repoName = "assignment-";
+//   const pdfPath = `/${repoName}/project-1-2-1.pdf`; 
+const pdfPath = "./project-1-2-1.pdf";
 
   return (
     <div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
