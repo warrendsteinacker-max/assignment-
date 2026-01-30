@@ -9,7 +9,7 @@ import Mod2 from './comps/Mod2';
 import Mod3 from './comps/Mod3';
 import Home from './comps/Home';
 // Import your logo at the top so Vite handles the path correctly
-import logo from './assets/logo.png'; 
+
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             {/* Using the imported logo variable ensures the image shows up */}
-            <img src={logo} alt="Logo" style={{ width: '50px', height: '50px' }} />
+            {/* <img src={logo} alt="Logo" style={{ width: '50px', height: '50px' }} /> */}
             <p style={{ margin: 0, fontSize: '14px', color: 'black' }}>
               Welcome to my Elementary Literacy Skills Website!
             </p>
