@@ -1,23 +1,68 @@
 import React from 'react'
 
 const Mod3 = () => {
-  return (
-    <div className="preview-container">
-  <h3>Flyer Preview: Talk Your Way into Writing!</h3>
-  
-  {/* This displays the PDF preview */}
-  <iframe 
-    src="/literacy-flyer.pdf" 
-    width="100%" 
-    height="500px" 
-    title="Literacy Flyer Preview"
-  ></iframe>
 
-  {/* This provides the actual download button */}
-  <a href="/literacy-flyer.pdf" download="Family_Literacy_Flyer.pdf">
-    <button>Download as PDF</button>
-  </a>
-</div>
+    const pdfPath1 = `./REFLECTION.pdf`; 
+    const pdfPath2 = `./Teacher Prep Lesson Plan Format mod 3 (3).pdf`;
+    const pdfPath3 = `./Link to flyer sec (1).pdf`;
+
+  return (
+    <div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+      <h3 style={{ fontFamily: 'sans-serif', color: 'black' }}>
+        Module 2 Part 2 Assignment
+      </h3>
+      
+      <div style={{ border: '2px solid black', borderRadius: '10px', padding: '10px', marginBottom: '15px' }}>
+        <p style={{ color: 'black', margin: 0 }}>
+          This assignment focuses on the creation of a professional Literacy Instructional Guide website...
+          {/* (Your text continues here) */}
+        </p>
+      </div>
+
+      <p style={{ fontSize: '14px', color: 'black', marginBottom: '15px' }}>
+        Preview of Module 2 Part 2 Assignment 
+      </p>
+
+      {/* --- Section 1 --- */}
+      <iframe 
+        style={{ borderRadius: '15px', width: '100%', height: '600px', border: '2px solid #eaeaea', marginBottom: '10px' }}
+        src={pdfPath1} title="PDF 1"
+      ></iframe>
+      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <a href={pdfPath1} download>
+          <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
+            Download Lesson Plan
+          </button>
+        </a>
+      </div>
+
+      {/* --- Section 2 --- */}
+      <iframe 
+        style={{ borderRadius: '15px', width: '100%', height: '600px', border: '2px solid #eaeaea', marginBottom: '10px' }}
+        src={pdfPath2} title="PDF 2"
+      ></iframe>
+      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <a href={pdfPath2} download>
+          <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
+            Download Reflection & Map
+          </button>
+        </a>
+      </div>
+
+      {/* --- Section 3 --- */}
+      <iframe 
+        style={{ borderRadius: '15px', width: '100%', height: '600px', border: '2px solid #eaeaea', marginBottom: '10px' }}
+        src={pdfPath3} title="PDF 3"
+      ></iframe>
+      <div style={{ textAlign: 'center' }}>
+        <a href={pdfPath3} download>
+          <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
+            Download References
+          </button>
+        </a>
+      </div>
+
+    </div>
   )
 }
 
