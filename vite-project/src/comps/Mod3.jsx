@@ -2,14 +2,14 @@ import React from 'react'
 
 const Mod3 = () => {
 
-    const pdfPath1 = `./REFLECTION.pdf`; 
+    const pdfPath1 = `./REFLECTION (1).pdf`; 
     const pdfPath2 = `./Teacher Prep Lesson Plan Format mod 3 (3).pdf`;
     const pdfPath3 = `./Link to flyer sec (1).pdf`;
 
   return (
     <div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
       <h3 style={{ fontFamily: 'sans-serif', color: 'black' }}>
-        Module 2 Part 2 Assignment
+        Module 3 Part 3 Assignment
       </h3>
       
       <div style={{ border: '2px solid black', borderRadius: '10px', padding: '10px', marginBottom: '15px' }}>
@@ -20,7 +20,7 @@ const Mod3 = () => {
       </div>
 
       <p style={{ fontSize: '14px', color: 'black', marginBottom: '15px' }}>
-        Preview of Module 2 Part 2 Assignment 
+        Preview of Module 3 Part 3 Assignment 
       </p>
 
       {/* --- Section 1 --- */}
@@ -44,7 +44,7 @@ const Mod3 = () => {
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
         <a href={pdfPath2} download>
           <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
-            Download Reflection & Map
+            Download Part of Assigment 
           </button>
         </a>
       </div>
@@ -57,7 +57,7 @@ const Mod3 = () => {
       <div style={{ textAlign: 'center' }}>
         <a href={pdfPath3} download>
           <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
-            Download References
+            Download Flyer Part of Assigment
           </button>
         </a>
       </div>
