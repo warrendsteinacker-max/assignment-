@@ -2,9 +2,9 @@ import React from 'react'
 
 const Mod4 = () => {
 
-    const pdfPath1 = `./REFLECTION (1).pdf`; 
-    const pdfPath2 = `./Teacher Prep Lesson Plan Format mod 3 (3).pdf`;
-    const pdfPath3 = `./Link to flyer sec (1).pdf`;
+    const pdfPath1 = `./Teacher Prep Lesson Plan Format mod 4 (4).pdf`; 
+    const pdfPath2 = `./Essay and link to Mind Map (1).pdf`;
+    
 
   return (
     <div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
@@ -31,7 +31,7 @@ const Mod4 = () => {
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
         <a href={pdfPath1} download>
           <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
-            Download Lesson Plan
+             Download Part of Assigment
           </button>
         </a>
       </div>
@@ -49,18 +49,7 @@ const Mod4 = () => {
         </a>
       </div>
 
-      {/* --- Section 3 --- */}
-      <iframe 
-        style={{ borderRadius: '15px', width: '100%', height: '600px', border: '2px solid #eaeaea', marginBottom: '10px' }}
-        src={pdfPath3} title="PDF 3"
-      ></iframe>
-      <div style={{ textAlign: 'center' }}>
-        <a href={pdfPath3} download>
-          <button style={{ backgroundColor: '#4A90E2', color: 'white', padding: '12px 24px', borderRadius: '8px', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
-            Download Flyer Part of Assigment
-          </button>
-        </a>
-      </div>
+
 
     </div>
   )
@@ -68,3 +57,7 @@ const Mod4 = () => {
 }
 
 export default Mod4
+
+
+
+/////////
