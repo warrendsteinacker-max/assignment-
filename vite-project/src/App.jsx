@@ -8,6 +8,7 @@ import Mod1 from './comps/Mod1';
 import Mod2 from './comps/Mod2';
 import Mod3 from './comps/Mod3';
 import Mod4 from './comps/Mod4';
+import Mod5 from './comps/Mod5'
 import Home from './comps/Home';
 // Import your logo at the top so Vite handles the path correctly
 
@@ -49,6 +50,7 @@ function App() {
           <Link to="/mod2" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 2</Link>
           <Link to="/mod3" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 3</Link>
           <Link to="/mod4" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 4</Link>
+          <Link to="/mod5" style={{ textDecoration: 'none', color: 'blue', fontWeight: 'bold' }}>Module 5</Link>        
         </nav>
 
         <div style={{ padding: '20px' }}>
@@ -60,6 +62,7 @@ function App() {
             <Route path="/mod2" element={<Mod2 />} />
             <Route path="/mod3" element={<Mod3 />} />
             <Route path="/mod4" element={<Mod4 />} />
+            <Route path="/mod5" element={<Mod5 />}/>
             
             {/* 'path="*"' is your safety net; it catches broken links and redirects to Home */}
             <Route path="*" element={<Home />} />

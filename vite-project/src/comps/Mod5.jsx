@@ -2,8 +2,8 @@
 
 const Mod5 = () => {
 
-    const pdfPath1 = `./Teacher Prep Lesson Plan Format mod 5 (5).pdf`; 
-    const pdfPath2 = `./Essay and link to Mind Map (1).pdf`;
+    const pdfPath1 = `./Teacher Prep Lesson Plan Format (5) (1).pdf`; 
+    const pdfPath2 = `./part a mod 5 and one page reflection (1).pdf`;
     
 
     
