@@ -2,8 +2,8 @@ import React from 'react'
 
 const Mod6 = () => {
 
-    const pdfPath1 = `./Teacher Prep Lesson Plan Format mod 6 (6).pdf`; 
-    const pdfPath2 = `./Essay and link to Mind Map (1).pdf`;
+    const pdfPath1 = `./Teacher Prep Lesson Plan Format (6) (1).pdf`; 
+    const pdfPath2 = `./Mod 6 assig essay (1).pdf`;
     
 
     
