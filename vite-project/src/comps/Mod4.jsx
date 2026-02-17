@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Mod4 = () => {
 
@@ -6,8 +6,9 @@ const Mod4 = () => {
     const pdfPath2 = `./Essay and link to Mind Map (1).pdf`;
     
 
-  return (
-    <div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
+    
+
+    return (<div className="preview-container" style={{ padding: '20px', maxWidth: '800px', margin: '0 auto' }}>
       <h3 style={{ fontFamily: 'sans-serif', color: 'black' }}>
         Module 4 Part 4 Assignment
       </h3>
@@ -56,7 +57,7 @@ const Mod4 = () => {
 
 }
 
-export default Mod4
+export default (Mod4)
 
 
 
